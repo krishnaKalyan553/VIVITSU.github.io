@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: black;
+}
+
+#header .logo{
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+#header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#header ul li{
+    margin-left: 20px;
+}
+
+#header a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header ul li a:hover, 
+#header ul li a.active{
+    background-color: skyblue;
+}
+
+section #main{
+    color: skyblue;
+    font-size: 10vh;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 234, 254);
+}
+
+section #main .title{
+    font-size: 10vh;
+}
+
+section #main .span{
+    font-size: 2vh;
+    letter-spacing: 2px;
+    font-weight: 400px;
+    line-height: 1.5rem;
+}
+
+section #main .tagline{
+    font-size: 3vh;
+}
+
+#highlights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#highlights h1{
+    margin: 50px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#highlights ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 15px 50px 15px;
+}
+
+#highlights ul li{
+    margin: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#highlights ul li img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background-color: black;
+}
+
+#problem-statements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+hr{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    height: 3px;
+    background-color: gold;
+    border: none;
+}
+
+#problem-statements h1{
+    margin: 50px 0px 0px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* background-color: aqua; */
+}
+
+#sponsors .title-sponsor img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background-color: black;
+}
+
+#sponsors img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    background-color: black;
+    margin: 20px;
+}
+
+#sponsors .other-sponsors{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#sponsors .other-sponsors .energy-sponsors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+#sponsors .other-sponsors .associate-sponsors{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sponsors .other-sponsors .associate-sponsors ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
