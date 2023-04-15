@@ -62,6 +62,7 @@ section #main{
     justify-content: center;
     flex-direction: column;
     background-color: rgb(255, 234, 254);
+    position: relative;
 }
 
 section #main .title{
@@ -79,11 +80,67 @@ section #main .tagline{
     font-size: 3vh;
 }
 
+/* ============= Parallax Effect =================== */
+
+/* section #main{
+    background-attachment: scroll;
+} */
+
+section #main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section #main img{
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+}
+
+section #main .sun{
+    top: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+section #main .forest{
+    width: 100%;
+    bottom: 0;
+}
+
+section #main .sea{
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+section #main .rock1{
+    left: 0;
+    bottom: 0;
+    width: 35%;
+}
+
+section #main .rock2{
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    /* rotate: 180deg; */
+    transform: scaleX(-1);
+}
+
+
 #highlights{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: skyblue;
+    transform: skewY(-2deg);
+    position: relative;
+    top: -20px;
 }
 
 #highlights h1{
@@ -96,11 +153,11 @@ section #main .tagline{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0px 15px 50px 15px;
+    margin: 0px 10px 50px 10px;
 }
 
 #highlights ul li{
-    margin: 40px 100px;
+    margin: 40px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -141,7 +198,8 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
+    margin-bottom: 150px;
     /* background-color: aqua; */
 }
 
@@ -192,3 +250,41 @@ hr{
     justify-content: center;
     flex-wrap: wrap;
 }
+  
+  #faqs{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background: rgb(19 25 51);
+    width: 100%;
+    
+  }
+
+  #faqs h1{
+    text-align: center;
+  }
+
+  #faqs .faqs-block{
+    margin: 5rem;
+
+  }
+
+  #faqs .faqs-block details{
+    margin: 2rem;
+  }
+
+  #faqs p{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: larger;
+    /* border-style: outset; */
+    /* border-color: rgb(140, 255, 140); */
+    border-radius: 2rem;
+    background-color: steelblue;
+    padding: 20px;
+    /* transition: all ease-in-out 2ms; */
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
