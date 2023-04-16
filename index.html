@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="bubble.css">
     <link rel="stylesheet" href="faqs.css">
+    <link rel="stylesheet" href="cursor.css">
     <script defer src="bubble.js"></script>
     <script defer src="faqs.js"></script>
+    <script defer src="cursor.js"></script>
     <!-- <link rel="stylesheet" href="card.css"> -->
     <link rel="stylesheet" href="footer.css">
     <!-- <link rel="stylesheet" href="cardsLess.less"> -->
@@ -21,10 +23,16 @@
 <body>
     <header id="header">
         <a href="#" class="logo">VIVITSU</a>
+        <div class="cursor"></div>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="https://unstop.com/o/qTPjOK9?lb=2ZvsJH5" class="active" target="_blank">REGISTER</a></li>
+            <li><a href="#" class="home">HOME</a></li>
+            <!-- <div class="home-cursor"></div> -->
+            <li><a href="#" class="about">ABOUT US</a></li>
+            <!-- <div class="about-cursor"></div> -->
+            <li>
+                <a href="https://unstop.com/o/qTPjOK9?lb=2ZvsJH5"  class= "active headRegister" target="_blank">REGISTER</a>
+                <div class="register-cursor"></div>
+            </li>
         </ul>
     </header>
     <section>
@@ -111,7 +119,9 @@
                         </a>
                         <h2>
                             Healthy Diet Application
-                            <small>Domains</small>
+                            <br>
+                            <small>Web Development</small>
+                            <small>App Development</small>
                         </h2>
                     </div>
                     <div class="card-flap flap1">
@@ -132,7 +142,9 @@
                         </a>
                         <h2>
                             Travel Assistance Chatbot
-                            <small>Image from unsplash.com</small>
+                            <br>
+                            <small>Web Development</small>
+                            <small>App Development</small>
                         </h2>
                     </div>
                     <div class="card-flap flap1">
@@ -153,7 +165,9 @@
                     </a>
                     <h2>
                         Platform that connects language learners with native speakers
-                        <small>Image from unsplash.com</small>
+                        <br>
+                        <small>Web Development</small>
+                        <small>App Development</small>
                     </h2>
                 </div>
                 <div class="card-flap flap1">
@@ -174,7 +188,9 @@
                     </a>
                     <h2>
                         Gamification of learning.
-                        <small>Image from unsplash.com</small>
+                        <br>
+                        <small>Web Development</small>
+                        <small>App Development</small>
                     </h2>
                 </div>
                 <div class="card-flap flap1">
@@ -195,7 +211,9 @@
                     </a>
                     <h2>
                         E-commerce products aggregator application
-                        <small>Image from unsplash.com</small>
+                        <br>
+                        <small>Web Development</small>
+                        <small>App Development</small>
                     </h2>
                 </div>
                 <div class="card-flap flap1">
@@ -216,7 +234,9 @@
                     </a>
                     <h2>
                         Fake product detection system
-                        <small>Image from unsplash.com</small>
+                        <br>
+                        <small>Web Development</small>
+                        <small>App Development</small>
                     </h2>
                 </div>
                 <div class="card-flap flap1">
@@ -237,7 +257,9 @@
                     </a>
                     <h2>
                         A Network Scanning Tool
-                        <small>Image from unsplash.com</small>
+                        <br>
+                        <small>Web Development</small>
+                        <small>App Development</small>
                     </h2>
                 </div>
                 <div class="card-flap flap1">
@@ -258,7 +280,9 @@
                     </a>
                     <h2>
                         Student Innovation
-                        <small>Image from unsplash.com</small>
+                        <br>
+                        <small>Web Development</small>
+                        <small>App Development</small>
                     </h2>
                 </div>
                 <div class="card-flap flap1">
@@ -309,39 +333,114 @@
                 <div class="boxaccordion">
                     <div class="containerwidth">
                         <div class="wrapper">
-                            <button class="toggle">How FAQs Accordion help us to rank our website?<i class="fas fa-plus icon"></i></button>
+                            <button class="toggle">What is a Hackathon?<i class="fas fa-plus icon"></i></button>
                             <div class="content">
-                                <p>FAQs accordion is a great way to help you build authority and trust, and at the same time bestow a bit of personality on the website. It also helps you answer frequently asked questions, produce additional content quickly, and reduce bounce rates.</p>
+                                <p>A Hackathon is an event where participants come together to collaborate on projects, develop new skills, and solve problems in a specific domain or industry. Typically, participants work in teams to create innovative projects within a set timeframe.</p>
                             </div>
                         </div>
                         <div class="wrapper">
-                            <button class="toggle">What is the benefits of FAQs Accordion in blogger?<i class="fas fa-plus icon"></i></button>
+                            <button class="toggle">What is the Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
                             <div class="content">
-                                <p>Benefit of FAQs accordion  for blogger is that it helps your blog visitors to find what they are looking for in less time.</p>
+                                <p>Vivitsu 2023 is a 24-hours hackathon organized by FSW in GRIET College. It's an opportunity for college students to showcase their skills and creativity by building innovative projects related to a specific theme.</p>
                             </div>
                         </div>
                         <div class="wrapper">
-                            <button class="toggle">Does FAQs Scheme Help Us to Rank our Site in Top Position?<i class="fas fa-plus icon"></i></button>
+                            <button class="toggle">Who can participate in Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
                             <div class="content">
-                                <p> Yes, Frequently Asked Questions scheme will make your website more popular and increase your search engine ranking position.</p>
+                                <p>Vivitsu 2023 is open to all college students who are passionate about technology and innovation. </p>
                             </div>
                         </div>
                         <div class="wrapper">
-                            <button class="toggle">Does FAQs Scheme Help Us to Rank our Site in Top Position?<i class="fas fa-plus icon"></i></button>
+                            <button class="toggle">What are the prerequisites for Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
                             <div class="content">
-                                <p> Yes, Frequently Asked Questions scheme will make your website more popular and increase your search engine ranking position.</p>
+                                <p>There are no specific prerequisites for Vivitsu 2023. However, participants should have basic knowledge of programming and software development.
+                                Participants should bring their own laptops. WiFi will be provided during the whole event.</p>
                             </div>
                         </div>
                         <div class="wrapper">
-                            <button class="toggle">Does FAQs Scheme Help Us to Rank our Site in Top Position?<i class="fas fa-plus icon"></i></button>
+                            <button class="toggle">What is the eligibility criteria?<i class="fas fa-plus icon"></i></button>
                             <div class="content">
-                                <p> Yes, Frequently Asked Questions scheme will make your website more popular and increase your search engine ranking position.</p>
+                                <p>The eligibility criteria for Vivitsu 2023 is that participants should be currently enrolled in a college program.</p>
                             </div>
                         </div>
                         <div class="wrapper">
-                            <button class="toggle">Does FAQs Scheme Help Us to Rank our Site in Top Position?<i class="fas fa-plus icon"></i></button>
+                            <button class="toggle">When is the deadline?<i class="fas fa-plus icon"></i></button>
                             <div class="content">
-                                <p> Yes, Frequently Asked Questions scheme will make your website more popular and increase your search engine ranking position.</p>
+                                <p>The deadline for Vivitsu 2023 is  on 27th April 2023 till 11:00 PM.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">What are the rules and guidelines for Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>All the rules and guidelines are provided on the Unstop. Additional rules and guidelines will be provided to all participants before the event. They will include details on project submission, judging criteria, code of conduct, and more.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">How long is the Hackathon Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>The duration of the Hackathon Vivitsu 2023 is a 24-hour hackathon starting from 28th April 11 AM to 29th April 11 AM. No students will be allowed to leave the premises until the end of hackathon.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">What kind of projects can be submitted for the Hackathon Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>Participants can submit projects which are potential solutions to the problem statements provided. Projects can be hardware, software, or a combination of both.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">How will the projects be judged in the Hackathon Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>The projects will be judged based on a set of criteria that will be provided to participants before the event. The criteria may include factors such as innovation, functionality, usability, and scalability.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">What are the prizes for the winners of the Hackathon Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>The total prize pool of Vivitsu 2023 is worth 1,00,000 INR. One team is selected as winner for each problem statement. The prize money for each winning team is 10000 INR.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">Will food be provided during the event?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>Yes, each participant will be provided with lunch and dinner on 28th of April and breakfast and lunch on 29th of April along with refreshments on both the days.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">How can I register for Vivitsu 2023?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>Details on how to register for Vivitsu 2023 is provided in Unstop website.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">What is the process of registration?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>
+                                    •	Search for Vivitsu on Unstop website or click on the link provided below.
+                                    https://unstop.com/hackathons/vivitsu-gokaraju-rangaraju-institute-of-engineering-and-technology-griet-hyderabad-638208
+                              •	Click on the register option provided on the page.
+                              •	Fill in the details of the participants. Add the details of all the team mates and accept the terms and conditions.
+                              •	Continue with the payment using the link provided or scan the QR code present on the Vivitsu banner or the one provided below the details of the event.
+                              •	Once the payment is completed, upload the screenshot of the payment in the slot provided on the page and join our Whatsapp group using the link provided on the page.
+                              <b>NOTE: No refunds will be encouraged .</b>
+                            </p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">What is the Reporting Time ?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>Participants need to report at Griet Campus at Hall 1 at 9:00AM on 28th April 2023.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper">
+                            <button class="toggle">What is the Address of the venue?<i class="fas fa-plus icon"></i></button>
+                            <div class="content">
+                                <p>
+                                    Gokaraju Rangaraju Institute of Engineering and technology, Nizampet Road , Kukatpally Hyderabad .
+                                    If any doubts, feel free to Contact:
+                                    Hansikaa-9603084780
+                                    Ketan-9032860125
+                                    Abhishek-9704209656
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -451,13 +550,16 @@
         </div>
         <div class="footer-content-column">
             <div class="footer-call-to-action">
-            <h2 class="footer-call-to-action-title">Register</h2>
-            <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
+                <h2 class="footer-call-to-action-title">Register</h2>
+                <a class="footer-call-to-action-button QRcode" href="#" target="_self">
+                    <img src="images/QRcode1.png" alt="">
+                </a>
+                <div class="cursor"></div>
             </div>
             <div class="footer-call-to-action">
                 <p class="footer-call-to-action-description"> Have any queries?</p>
-            <h2 class="footer-call-to-action-title">Contact Us</h2>
-            <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self"> 0124-64XXXX </a></p>
+                <h2 class="footer-call-to-action-title">Contact Us</h2>
+                <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX" target="_self"> 0124-64XXXX </a></p>
             </div>
         </div>
         <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
@@ -498,6 +600,7 @@
         </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <div class="footer-cursor"></div>
+    <script defer src="index.js"></script>
 </body>
 </html>

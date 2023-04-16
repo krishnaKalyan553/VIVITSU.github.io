@@ -99,15 +99,11 @@ a {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.footer-call-to-action-button:hover {
-  background-color: #fffff2;
-  color: #00bef0;
-}
 .button:last-of-type {
   margin-right: 0;
 }
 .footer-call-to-action-button {
-  background-color: #027b9a;
+  /* background-color: #027b9a;
   border-radius: 21px;
   color: #fffff2;
   display: inline-block;
@@ -115,14 +111,30 @@ a {
   font-weight: 900;
   letter-spacing: 0.1em;
   line-height: 18px;
-  padding: 12px 30px;
+  /* padding: 12px 30px;
   margin: 0 10px 10px 0;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: uppercase; */
   transition: background-color 0.2s;
   cursor: pointer;
   position: relative;
+  top: 10px;
 }
+
+.QRcode img{
+  width:5rem;
+  height: 5rem;
+}
+
+/* .footer-call-to-action .QRcode{
+  visibility: visible;
+}
+.footer-call-to-action:hover .QRcode{
+  /* background-color: #fffff2;
+  color: #00bef0;
+  visibility: visible;
+} */
+
 .footer-call-to-action {
   margin-top: 30px;
 }
