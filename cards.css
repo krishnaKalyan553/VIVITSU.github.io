@@ -54,6 +54,10 @@ div.cards {
   display: grid;
   grid-template-columns: auto auto auto;
   align-items: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
 }
 
 div.card {
@@ -207,4 +211,11 @@ div.card.show div.flap1 {
 }
 div.card.show div.flap2 {
   transition: all 0.3s 0.2s ease-out;
+}
+
+
+@media only screen and (max-width: 1400px){
+ div.cards{
+  grid-template-columns: auto auto;
+ } 
 }

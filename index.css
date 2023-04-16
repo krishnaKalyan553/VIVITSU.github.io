@@ -2,10 +2,20 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 li{
     list-style-type: none;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
 }
 
 #header{
@@ -47,12 +57,19 @@ li{
 
 #header ul li a:hover, 
 #header ul li a.active{
-    background-color: skyblue;
+    background-color: rgb(0, 183, 255);
+}
+
+section{
+    /* background-color: rgb(0, 143, 199); */
+    /* background-color: rgb(0, 183, 255); */
+    background-color: bisque;
+    z-index: 10;
 }
 
 section #main{
     color: skyblue;
-    font-size: 10vh;
+    /* font-size: 10vh; */
     text-align: center;
     position: relative;
     width: 100%;
@@ -66,7 +83,7 @@ section #main{
 }
 
 section #main .title{
-    font-size: 10vh;
+    font-size: 10rem;
 }
 
 section #main .span{
@@ -137,8 +154,8 @@ section #main .rock2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: skyblue;
-    transform: skewY(-2deg);
+    /* background-color: skyblue; */
+    /* transform: skewY(-4deg); */
     position: relative;
     top: -20px;
 }
@@ -146,6 +163,7 @@ section #main .rock2{
 #highlights h1{
     margin: 50px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* transform: skewY(4deg); */
 }
 
 #highlights ul{
@@ -154,6 +172,7 @@ section #main .rock2{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px 10px 50px 10px;
+    /* transform: skewY(4deg); */
 }
 
 #highlights ul li{
@@ -162,14 +181,14 @@ section #main .rock2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 240px;
+    text-align: center;
 }
 
 #highlights ul li img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
     margin-bottom: 30px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 #problem-statements{
@@ -188,19 +207,27 @@ hr{
 }
 
 #problem-statements h1{
-    margin: 50px 0px 0px 0px;
+    margin: 50px 0px 50px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
-#sponsors{
+/* #sponsors{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 150px;
-    /* background-color: aqua; */
+    background-color: rgb(255, 107, 107);
+    transform: skewY(-2deg);
+    margin: 100px 0px;
+    /* background-color: aqua;
+}
+
+#sponsors .title-sponsor{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    transform: skewY(2deg);
 }
 
 #sponsors .title-sponsor img{
@@ -223,9 +250,11 @@ hr{
 #sponsors .other-sponsors{
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 150px;
+    transform: skewY(2deg);
 }
 
 #sponsors .other-sponsors .energy-sponsors{
@@ -233,15 +262,17 @@ hr{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 30%;
+    margin: 0px 120px;
+    /* width: 30%; 
 }
 
 #sponsors .other-sponsors .associate-sponsors{
-    width: 70%;
+    /* width: 70%; 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0px 120px;
 }
 
 #sponsors .other-sponsors .associate-sponsors ul{
@@ -249,13 +280,49 @@ hr{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+} */
+
+#sponsors{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sponsors h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#sponsors ul{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+#sponsors ul li{
+    background-color: whitesmoke;
+    margin: 30px;
+    border-radius: 40px;
+}
+
+#sponsors ul li img{
+    width: 10rem;
 }
   
-  #faqs{
+  /* #faqs{
     display: flex;
     flex-direction: column;
     color: #fff;
-    background: rgb(19 25 51);
+    /* background-color: #027b9a; 
+    /* background: rgb(19 25 51); 
     width: 100%;
     
   }
@@ -277,14 +344,14 @@ hr{
     margin: 1rem;
     padding: 0.5rem;
     font-size: larger;
-    /* border-style: outset; */
-    /* border-color: rgb(140, 255, 140); */
+    /* border-style: outset; 
+    /* border-color: rgb(140, 255, 140); 
     border-radius: 2rem;
-    background-color: steelblue;
     padding: 20px;
-    /* transition: all ease-in-out 2ms; */
+    /* transition: all ease-in-out 2ms; 
     transition-property: all;
     transition-duration: 2s;
     transition-timing-function: linear;
     transition-delay: 1s;
-  }
+  } */
+
