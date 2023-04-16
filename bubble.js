@@ -1,4 +1,6 @@
 let bubbles=document.getElementsByClassName("bubble");
+let curs=document.querySelector(".cursor");
+console.log(curs.style);
 
 console.log(bubbles);
 
@@ -21,7 +23,7 @@ for(let i=0; i<bubbles.length; i++){
 let animationBlock=document.getElementById("background-wrap")
 var myScrollFunc = function() {
     var y = window.scrollY;
-    if (y >= 50) {
+    if (y >= 100) {
       animationBlock.style.display = "none"
     } else {
       animationBlock.style.display = "block"
