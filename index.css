@@ -92,14 +92,17 @@ section #main .title{
 }
 
 section #main .span{
-    font-size: 2vh;
+    font-size: 2rem;
     letter-spacing: 2px;
     font-weight: 400px;
-    line-height: 1.5rem;
+    line-height: 10.5rem;
 }
 
 section #main .tagline{
-    font-size: 3vh;
+    font-size: 3rem;
+    line-height: 16rem;
+    display: block;
+    height: 250px;
 }
 
 /* ============= Parallax Effect =================== */
