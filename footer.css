@@ -15,6 +15,7 @@ a {
   background-color: black;
   color: #fff;
   position: relative;
+  cursor: none;
 }
 .footer-wave-svg {
   background-color: transparent;
