@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100px;
+}
+
+#aboutUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+#aboutUs .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#aboutUs .heading h1{
+    margin: 0;
+    padding: 0;
+}
+
+#aboutUs .heading img{
+    width: 70px;
+    margin-right: 20px;
+}
+
+#aboutUs>div{
+    line-height: 1.8rem;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+#aboutUs>div{
+    border: 2px solid none;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    margin: 50px 0px 0px 0px;
+    padding: 2rem;
+}
+
+#aboutUs #vivitsu{
+    background-color: skyblue;
+}
+
+#aboutUs #fsw{
+    background-color: rgb(255, 99, 99);
+}
+
+#aboutUs #community{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+#aboutUs #community .organiser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
