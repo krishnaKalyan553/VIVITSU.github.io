@@ -1,4 +1,4 @@
-var words = ['Hi i like HTML', 'I also like css', 'Lorem ipsum dolor sit amet', ' consectetur adipiscing elit', 'sed do eiusmod tempor incididunt'],
+var words = ['Unleash your creativity', 'Compete, code, and conquer!', 'Elevate your coding game and make an impact!'],
     part,
     i = 0,
     offset = 0,

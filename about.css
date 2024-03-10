@@ -7,6 +7,10 @@ img{
     width: 100px;
 }
 
+.name{
+    font-weight: bold;
+}
+
 #aboutUs{
     display: flex;
     align-items: center;

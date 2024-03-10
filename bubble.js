@@ -6,7 +6,6 @@ console.log(bubbles);
 
 function p(){
     console.log("working")
-
 }
 
 for(let i=0; i<bubbles.length; i++){
